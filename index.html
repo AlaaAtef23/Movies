@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="backGround  py-5">
+        <section id="sideBar">
+            <div class="sideBar-inner bg-black p-4">
+                <ul class="list-unstyled text-white p-2 fs-5">
+                    <li groupCode="">
+                        Now playing
+                    </li>
+                    <li class="li" groupCode="movie/popular">
+                        Popular
+                    </li>
+                    <li class="li" groupCode="movie/top_rated">
+                        Top Rated
+                    </li>
+                    <li class="li" groupCode="trending/all/day">
+                        Trending
+                    </li>
+                    <li class="li" groupCode="movie/upcoming">
+                        Upcoming
+                    </li>
+                    <li>
+                        <a href="#contactUs">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="text-white d-flex">
+                    <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""> <i class="fa-solid d-block fa-globe "></i> </a>
+                </div>
+                <p class="text-white-50 mt-4">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+            <div class=" bg-white p-2 parent-icon">
+                <img src="img/logo.png" class="p-1 d-flex  ">
+                <div class="icon-1 ">
+                    <i class="fa-solid fa-bars "></i>
+                </div>
+                <div class=" icon-2 d-flex flex-column align-items-end d-inline-block ">
+                    <i class="fa-solid d-block fa-globe "></i>
+                    <i class="fas fa-share-alt d-block "></i>
+                </div>
+            </div>
+        </section>
+        <div class="d-flex justify-content-center mt-2 mb-5 ">
+            <div class="col-4 m-3">
+                <input type="text" oninput="search(this.value)" class="text-light border border-top-0 border-end-0 border-start-0 rounded-0 form-control bg-transparent fs-5 text-center" placeholder="get movies by word..">
+            </div>
+            <div class="col-4 m-3">
+                <input type="text" class=" border border-top-0 border-end-0 border-start-0 rounded-0 form-control bg-transparent fs-5 text-center" placeholder="search..">
+            </div>
+        </div>
+
+        <div id="imges" class="imges ms-5 ps-3 d-flex justify-content-center flex-wrap">
+        </div>
+        <div id="contactUs" class="container">
+            <h2 class="text-white fw-light">ContacUs...</h2>
+            <div class="d-flex flex-wrap justify-content-center mt-2 mb-5 ">
+                <div class="col-6 my-3 pe-4">
+                    <input type="text" oninput="validateName(this.value)" class=" border border-top-0 border-end-0 border-start-0 rounded-0 form-control bg-transparent fs-5 text-center" placeholder="enter your name">
+                    <div id="enterName">
+
+                    </div>
+                </div>
+                <div class="col-6 my-3 ps-4">
+                    <input type="text" oninput="validateMail(this.value)" class=" border border-top-0 border-end-0 border-start-0 rounded-0 form-control bg-transparent fs-5 text-center" placeholder="Enter email">
+                    <div id="enterMail"></div>
+                </div>
+                <div class="col-6 my-3 pe-4">
+                    <input type="text" oninput="validatePhone(this.value)" class=" border border-top-0 border-end-0 border-start-0 rounded-0 form-control bg-transparent fs-5 text-center" placeholder="Enter phone">
+                    <div id="enterPhone"></div>
+                </div>
+                <div class="col-6 my-3 ps-4">
+                    <input type="text" oninput="validateAge(this.value)" class=" border border-top-0 border-end-0 border-start-0 rounded-0 form-control bg-transparent fs-5 text-center" placeholder="Age">
+                    <div id="enterAge"></div>
+                </div>
+                <div class="col-6 my-3 pe-4">
+                    <input id="password" type="password" oninput="validatePass(this.value)" class=" border border-top-0 border-end-0 border-start-0 rounded-0 form-control bg-transparent fs-5 text-center" placeholder="Enter password">
+                    <div id="enterPassword"></div>
+                </div>
+                <div class="col-6 my-3 ps-4">
+                    <input type="password" oninput="validateRepass(this.value)" class=" border border-top-0 border-end-0 border-start-0 rounded-0 form-control bg-transparent fs-5 text-center" placeholder="Enter password">
+                    <div id="enteRepassword"></div>
+                </div>
+                <div class="me-auto">
+                    <button type="button" class="btn btn-outline-danger p-2 m-2 fs-5">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
